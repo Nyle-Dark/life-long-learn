@@ -4,8 +4,9 @@ import time
 import random
 from datetime import datetime
 import os
-import json  # 新增导入
+import json
 from dateutil.relativedelta import relativedelta
+import subprocess
 
 
 def convert_time_string(time_str):
@@ -58,18 +59,18 @@ def crawl_boss_zhipin():
     # 获取当前脚本所在目录作为项目根路径
     base_dir = os.path.dirname(os.path.abspath(__file__))
 
-    # 在项目根目录下创建"云计算程序员"子文件夹
-    folder_path = os.path.join(base_dir, "云计算程序员")
+    # 修改文件夹名称为CloudComputingEngineer
+    folder_path = os.path.join(base_dir, "CloudComputingEngineer")
     if not os.path.exists(folder_path):
         os.makedirs(folder_path)
         print(f"已创建文件夹: {folder_path}")
 
-    # 加载历史爬取的职位ID
+    # 加载历史爬取的职位ID（在现有基础上增量更新）
     existing_job_ids = load_existing_job_ids(folder_path)
     print(f"已加载 {len(existing_job_ids)} 个历史职位ID")
 
-    # 设置CSV文件路径
-    csv_filename = os.path.join(folder_path, f'boss_cloud_jobs_{timestamp}.csv')
+    # 修改文件名为CloudComputingEngineer
+    csv_filename = os.path.join(folder_path, f'CloudComputingEngineer_jobs_{timestamp}.csv')
 
     # 本次运行的去重集合
     seen_job_ids = set()
@@ -146,7 +147,7 @@ def crawl_boss_zhipin():
                     if not job_id:
                         continue
 
-                    # 三重去重检查：
+                    # 三重去重检查（基于历史ID集合）：
                     # 1. 本次运行已处理过
                     # 2. 历史数据中已存在
                     if job_id in seen_job_ids or job_id in existing_job_ids:
@@ -213,7 +214,7 @@ def crawl_boss_zhipin():
         except:
             pass
 
-        # 更新历史职位ID集合
+        # 更新历史职位ID集合（在现有基础上添加新ID）
         if seen_job_ids:
             existing_job_ids.update(seen_job_ids)
             save_job_ids(folder_path, existing_job_ids)
@@ -237,5 +238,22 @@ if __name__ == '__main__':
         subprocess.check_call(["pip", "install", "python-dateutil"])
         from dateutil.relativedelta import relativedelta
 
-    result_file = crawl_boss_zhipin()
-    print(f"文件已保存到项目目录下的'云计算程序员'文件夹: {result_file}")
+    # 连续运行10次（不做任何优化）
+    for i in range(10):
+        print(f"\n{'=' * 50}")
+        print(f"开始第 {i + 1}/10 次爬取任务")
+        print(f"{'=' * 50}\n")
+
+        try:
+            result_file = crawl_boss_zhipin()
+            print(f"第 {i + 1} 次爬取完成! 文件路径: {result_file}")
+        except Exception as e:
+            print(f"第 {i + 1} 次爬取失败: {str(e)}")
+
+        # 如果不是最后一次，添加等待时间
+        if i < 9:
+            wait_minutes = random.randint(2, 3)  # 2-5分钟随机等待
+            print(f"等待 {wait_minutes} 分钟后开始下次爬取...")
+            time.sleep(wait_minutes * 60)  # 转换为秒
+
+    print("\n所有10次爬取任务已完成!")
