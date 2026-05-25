@@ -8,7 +8,7 @@ import json
 from dateutil.relativedelta import relativedelta
 import subprocess
 
-
+#此代码可删可不删，曾用于爬取发布时间，但毫无作用，也可作预留位
 def convert_time_string(time_str):
     """转换BOSS直聘的时间描述为实际日期"""
     today = datetime.now()
@@ -28,7 +28,7 @@ def convert_time_string(time_str):
     else:
         return time_str  # 返回原始字符串
 
-
+#历史ID的保存位置，可以让数据不重复，进行去重管理
 def load_existing_job_ids(folder_path):
     """加载历史爬取的职位ID集合"""
     history_file = os.path.join(folder_path, "collected_job_ids.json")
@@ -47,7 +47,7 @@ def save_job_ids(folder_path, job_ids):
     with open(history_file, 'w', encoding='utf-8') as f:
         json.dump(list(job_ids), f, ensure_ascii=False)
 
-
+# 配置的参数，一三 不用改，二 五次就不错，这个参数很完美
 def crawl_boss_zhipin():
     # 配置参数
     TARGET_COUNT = 150  # 目标数据量
@@ -59,6 +59,7 @@ def crawl_boss_zhipin():
     # 获取当前脚本所在目录作为项目根路径
     base_dir = os.path.dirname(os.path.abspath(__file__))
 
+#之后换职业的时候记得改一个名字，要求英文名，不要带空格，数据会无法上传
     # 修改文件夹名称为CloudComputingEngineer
     folder_path = os.path.join(base_dir, "CloudComputingEngineer")
     if not os.path.exists(folder_path):
@@ -69,6 +70,7 @@ def crawl_boss_zhipin():
     existing_job_ids = load_existing_job_ids(folder_path)
     print(f"已加载 {len(existing_job_ids)} 个历史职位ID")
 
+#此处同上，名字后面可以加地区英文，方便管理
     # 修改文件名为CloudComputingEngineer
     csv_filename = os.path.join(folder_path, f'CloudComputingEngineer_jobs_{timestamp}.csv')
 
@@ -97,6 +99,7 @@ def crawl_boss_zhipin():
         # 浏览器初始化 - 使用原始代码的设置
         dp = ChromiumPage()
 
+#能看到职位不，把职位改了，一定是要存在的职业，后面的编码是城市的编码，这样就可以固定区域
         # 设置真正的全国搜索URL
         target_url = 'https://www.zhipin.com/web/geek/jobs?query=云计算工程师&city=100010000'
         print("开始全国搜索")
@@ -238,7 +241,7 @@ if __name__ == '__main__':
         subprocess.check_call(["pip", "install", "python-dateutil"])
         from dateutil.relativedelta import relativedelta
 
-    # 连续运行10次（不做任何优化）
+    # 连续运行10次（不做任何优化），如果想挂的时间长一点，就变大一些，现在的代码完全运行一次大概1h
     for i in range(10):
         print(f"\n{'=' * 50}")
         print(f"开始第 {i + 1}/10 次爬取任务")
@@ -250,9 +253,9 @@ if __name__ == '__main__':
         except Exception as e:
             print(f"第 {i + 1} 次爬取失败: {str(e)}")
 
-        # 如果不是最后一次，添加等待时间
+        # 如果不是最后一次，添加等待时间，2-3挺合理，太大等的心烦，太小运行会可能触发机制
         if i < 9:
-            wait_minutes = random.randint(2, 3)  # 2-5分钟随机等待
+            wait_minutes = random.randint(2, 3)  # 2-3分钟随机等待
             print(f"等待 {wait_minutes} 分钟后开始下次爬取...")
             time.sleep(wait_minutes * 60)  # 转换为秒
 
