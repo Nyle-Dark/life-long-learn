@@ -101,7 +101,7 @@ def crawl_boss_zhipin():
 
 #能看到职位不，把职位改了，一定是要存在的职业，后面的编码是城市的编码，这样就可以固定区域
         # 设置真正的全国搜索URL
-        target_url = 'https://www.zhipin.com/web/geek/jobs?query=云计算工程师&city=100010000'
+        target_url = 'https://www.zhipin.com/web/geek/jobs?query=云计算工程师&city=101080100'
         print("开始全国搜索")
 
         dp.get(target_url)
@@ -242,9 +242,9 @@ if __name__ == '__main__':
         from dateutil.relativedelta import relativedelta
 
     # 连续运行10次（不做任何优化），如果想挂的时间长一点，就变大一些，现在的代码完全运行一次大概1h
-    for i in range(10):
+    for i in range(30):
         print(f"\n{'=' * 50}")
-        print(f"开始第 {i + 1}/10 次爬取任务")
+        print(f"开始第 {i + 1}/30 次爬取任务")
         print(f"{'=' * 50}\n")
 
         try:
@@ -254,9 +254,9 @@ if __name__ == '__main__':
             print(f"第 {i + 1} 次爬取失败: {str(e)}")
 
         # 如果不是最后一次，添加等待时间，2-3挺合理，太大等的心烦，太小运行会可能触发机制
-        if i < 9:
+        if i < 19:
             wait_minutes = random.randint(2, 3)  # 2-3分钟随机等待
             print(f"等待 {wait_minutes} 分钟后开始下次爬取...")
             time.sleep(wait_minutes * 60)  # 转换为秒
 
-    print("\n所有10次爬取任务已完成!")
+    print("\n所有30次爬取任务已完成!")
