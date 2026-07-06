@@ -1,0 +1,24 @@
+{
+    "课程名称": "网络互联路由技术",
+    "任务模块": "项目1 大型园区网络构建",
+    "知识点实体 (Knowledge)": [
+        "VLAN原理、Eth-Trunk协议、MSTP协议、VRRP协议",
+        "OSPF协议原理、IS-IS协议原理、路由策略工具（Route-Policy、Filter-Policy）",
+        "DHCP原理、DHCP中继原理、BFD协议机制、联动机制",
+        "WLAN三层漫游、组播协议（IGMP/PIM）、IPv6基础、OSPFv3",
+        "VPN技术、BGP协议、NAT原理、ACL技术"
+    ],
+    "技能点实体 (Skill)": [
+        "能根据业务需求设计高可用园区网络，配置VLAN、Eth-Trunk、MSTP、VRRP",
+        "能独立完成VLAN划分与端口配置；2. 能配置Eth-Trunk链路聚合；3. 能配置MSTP实现环路消除与负载分担；4. 能配置VRRP实现网关冗余备份",
+        "能配置OSPF多区域、IS-IS多区域，能使用路由策略工具实现路由精确控制",
+        "能配置OSPF多区域及虚链路；2. 能配置OSPF特殊区域；3. 能配置IS-IS多区域；4. 能使用Route-Policy实现路由引入与过滤",
+        "能部署DHCP服务与中继，能配置BFD实现链路快速检测与联动",
+        "能配置DHCP服务器与中继；2. 能配置BFD与OSPF联动；3. 能配置BFD与VRRP联动",
+        "能规划并部署IPv6网络，能配置WLAN三层漫游与组播路由",
+        "能配置WLAN三层漫游；2. 能配置IGMP与PIM组播路由；3. 能规划IPv6地址；4. 能配置IPv6静态路由与OSPFv3",
+        "能配置VPN与BGP协议，能部署企业安全出口",
+        "能配置VPN隧道；2. 能配置BGP邻居、路由反射器与联盟；3. 能配置BGP路径属性控制选路；4. 能配置NAT与ACL实现访问控制"
+    ],
+    "关联证书 (Certification)": []
+}

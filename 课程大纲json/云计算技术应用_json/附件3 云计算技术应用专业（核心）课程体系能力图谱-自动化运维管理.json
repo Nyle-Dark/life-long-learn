@@ -1,0 +1,36 @@
+{
+    "课程名称": "自动化运维管理",
+    "任务模块": "自动化运维管理",
+    "知识点实体 (Knowledge)": [
+        "Linux发展史与发行版、目录结构标准(FHS)、文件权限位(rwx)、用户与组概念、IO重定向与管道。",
+        "Bash Shell特性、环境变量与作用域、条件测试运算符、算术运算、脚本调试技巧。",
+        "正则表达式基础与扩展、流编辑器原理、文本行/列处理逻辑。",
+        "C/S架构原理、SSH协议、YAML基础、Ansible核心配置文件详解。",
+        "Ansible模块库、幂等性概念、并发控制。",
+        "YAML语法规范、Playbook执行流程、Handlers延迟通知机制。",
+        "变量作用域、Jinja2语法（循环、判断、过滤器）、事实收集(setup模块)。",
+        "Role生命周期、目录约定、依赖管理、社区生态使用。",
+        "布尔逻辑运算、任务状态码、异常捕获机制。"
+    ],
+    "技能点实体 (Skill)": [
+        "操作系统安装部署能力、文件系统管理能力、用户与权限管控能力。",
+        "VMware/VirtualBox安装配置、mkdir/cp/mv/rm命令使用、chmod/chown权限修改、useradd/usermod用户管理、帮助手册(man)查询。",
+        "逻辑思维与算法实现能力、自动化脚本编写能力、故障排查能力。",
+        "Shebang声明、变量定义与引用、if/case条件判断、for/while/until循环、break/continue中断、函数定义与调用、脚本执行方式。",
+        "日志分析能力、非交互式文本编辑能力、正则表达式应用能力。",
+        "grep多条件过滤、cut字段提取、sed地址定界与替换(s///)、正则表达式匹配、管道组合使用。",
+        "自动化运维架构搭建能力、基础环境配置能力、网络连通性排查能力。",
+        "cfg参数配置、Inventory清单编写（静态/动态）、SSH Key生成与分发。",
+        "常用模块调用能力、批量并发操作能力、即时响应处理能力。",
+        "command/shell模块执行命令、copy/file模块管理文件、yum/apt模块管理软件、service/systemd管理服务、-m指定模块、-a传递参数。",
+        "复杂业务编排能力、YAML语言掌握能力、任务序列化执行能力。",
+        "Playbook结构（Hosts, Tasks, Handlers）、YAML缩进规范、多任务顺序执行、notify触发机制、tags标签使用。",
+        "变量管理能力、模板引擎应用能力、差异化配置管理能力。",
+        "变量优先级理解、register注册变量、set_fact设置事实、Jinja2过滤器使用、template模块参数配置。",
+        "模块化设计能力、代码复用能力、大型项目组织能力。",
+        "ansible-galaxy工具使用、Role目录规范、include_role/import_role调用、Collection集合安装与管理。",
+        "鲁棒性设计能力、容错与恢复能力、复杂逻辑控制能力。",
+        "when条件判断表达式、block/rescue/always结构编写、failed_when自定义失败条件、changed_when控制状态。"
+    ],
+    "关联证书 (Certification)": []
+}
