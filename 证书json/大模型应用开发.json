@@ -1,0 +1,53 @@
+[
+  {
+    "证书唯一ID": "CERT_LLM_001",
+    "证书/竞赛名称": "TensorFlow Developer Certificate",
+    "发证/主办机构": "Google 谷歌",
+    "认证级别": "中级 (Professional)",
+    "考核知识点 (Exam_Knowledge_Points)": [
+      "TensorFlow 2.x 神经网络全流程开发",
+      "预训练大模型轻量化微调落地",
+      "深度学习模型端侧部署优化",
+      "CV/NLP基础AI场景建模"
+    ],
+    "关联支撑岗位 (Target_Jobs)": [
+      "大模型应用开发工程师",
+      "深度学习模型调优工程师",
+      "AI端侧部署开发专员"
+    ]
+  },
+  {
+    "证书唯一ID": "CERT_LLM_002",
+    "证书/竞赛名称": "AWS Certified Machine Learning - Specialty",
+    "发证/主办机构": "亚马逊云科技 AWS",
+    "认证级别": "高级 (Senior)",
+    "考核知识点 (Exam_Knowledge_Points)": [
+      "AWS云原生大模型服务全栈开发",
+      "云端LLM微调和推理优化架构",
+      "大模型生产级高可用落地方案",
+      "云AI pipeline安全合规管控"
+    ],
+    "关联支撑岗位 (Target_Jobs)": [
+      "云原生大模型架构师",
+      "LLM云服务开发工程师",
+      "AWS AI场景落地专家"
+    ]
+  },
+  {
+    "证书唯一ID": "CERT_LLM_003",
+    "证书/竞赛名称": "HCIE AI 华为云人工智能高级工程师认证",
+    "发证/主办机构": "华为技术有限公司",
+    "认证级别": "专家级 (Expert)",
+    "考核知识点 (Exam_Knowledge_Points)": [
+      "华为云盘古大模型二次开发适配",
+      "国产大模型全栈工程化落地",
+      "ModelArts平台大模型流水线搭建",
+      "政企AI大模型国产化部署方案"
+    ],
+    "关联支撑岗位 (Target_Jobs)": [
+      "华为云大模型开发工程师",
+      "国产AI大模型实施专家",
+      "政企大模型项目架构师"
+    ]
+  }
+]

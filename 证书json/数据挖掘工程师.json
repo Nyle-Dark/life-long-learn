@@ -1,0 +1,53 @@
+[
+  {
+    "证书唯一ID": "CERT_DM_001",
+    "证书/竞赛名称": "Google Professional Data Engineer",
+    "发证/主办机构": "Google Cloud 谷歌云",
+    "认证级别": "高级 (Senior)",
+    "考核知识点 (Exam_Knowledge_Points)": [
+      "云原生大数据架构设计部署",
+      "PB级数据分布式挖掘建模",
+      "GCP全栈数据工具生态落地",
+      "实时数据流处理流水线搭建"
+    ],
+    "关联支撑岗位 (Target_Jobs)": [
+      "云原生数据挖掘工程师",
+      "大数据架构开发专家",
+      "云数据平台运维负责人"
+    ]
+  },
+  {
+    "证书唯一ID": "CERT_DM_002",
+    "证书/竞赛名称": "SAS Certified Data Scientist",
+    "发证/主办机构": "SAS 软件公司",
+    "认证级别": "中/高级 (Professional/Senior)",
+    "考核知识点 (Exam_Knowledge_Points)": [
+      "SAS平台全流程数据挖掘",
+      "金融场景风控建模分析",
+      "统计机器学习算法落地",
+      "合规性商业数据挖掘报告生成"
+    ],
+    "关联支撑岗位 (Target_Jobs)": [
+      "金融数据挖掘工程师",
+      "商业风控建模专员",
+      "传统行业数据科学家"
+    ]
+  },
+  {
+    "证书唯一ID": "CERT_DM_003",
+    "证书/竞赛名称": "Microsoft Certified: Azure Data Scientist Associate",
+    "发证/主办机构": "微软 Microsoft",
+    "认证级别": "中级 (Professional)",
+    "考核知识点 (Exam_Knowledge_Points)": [
+      "Azure ML平台模型开发部署",
+      "微软生态下数据挖掘 pipeline 搭建",
+      "AutoML自动化建模落地",
+      "Python机器学习云化部署"
+    ],
+    "关联支撑岗位 (Target_Jobs)": [
+      "Azure云数据挖掘工程师",
+      "AI模型部署运维专员",
+      "微软生态数据科学岗"
+    ]
+  }
+]
