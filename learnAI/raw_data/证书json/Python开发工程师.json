@@ -1,0 +1,53 @@
+[
+  {
+    "证书唯一ID": "CERT_PY_001",
+    "证书/竞赛名称": "PCPP Python认证专业级程序员",
+    "发证/主办机构": "Python Institute",
+    "认证级别": "专家级 (Expert)",
+    "考核知识点 (Exam_Knowledge_Points)": [
+      "Python高级语法与元编程",
+      "异步并发与高性能工程优化",
+      "Python大型项目架构设计",
+      "标准库与生态深度二次开发"
+    ],
+    "关联支撑岗位 (Target_Jobs)": [
+      "Python后端开发工程师",
+      "Python架构师",
+      "Python高性能服务开发专家"
+    ]
+  },
+  {
+    "证书唯一ID": "CERT_PY_002",
+    "证书/竞赛名称": "AWS Certified Developer – Associate",
+    "发证/主办机构": "亚马逊云科技 AWS",
+    "认证级别": "初级/中级 (Associate)",
+    "考核知识点 (Exam_Knowledge_Points)": [
+      "AWS云服务Python SDK全栈开发",
+      "Serverless Python云函数落地",
+      "云原生Python应用部署运维",
+      "云端Python服务性能调优"
+    ],
+    "关联支撑岗位 (Target_Jobs)": [
+      "云原生Python开发工程师",
+      "AWS云服务后端开发专员",
+      "Serverless应用开发工程师"
+    ]
+  },
+  {
+    "证书唯一ID": "CERT_PY_003",
+    "证书/竞赛名称": "Python技术应用工程师 专项技术证书",
+    "发证/主办机构": "工业和信息化部教育与考试中心",
+    "认证级别": "初/中/高级 (分级认证)",
+    "考核知识点 (Exam_Knowledge_Points)": [
+      "Python基础全场景语法应用",
+      "爬虫/自动化办公/数据分析实战",
+      "Python项目标准化工程规范",
+      "国内政企Python项目合规开发"
+    ],
+    "关联支撑岗位 (Target_Jobs)": [
+      "Python爬虫开发工程师",
+      "Python自动化运维专员",
+      "政企Python应用开发工程师"
+    ]
+  }
+]

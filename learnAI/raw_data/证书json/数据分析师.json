@@ -1,0 +1,53 @@
+[
+  {
+    "证书唯一ID": "CERT_DA_001",
+    "证书/竞赛名称": "CDA数据分析师（Level II / III）",
+    "发证/主办机构": "CDA 数据分析师协会",
+    "认证级别": "中/高级 (Professional/Senior)",
+    "考核知识点 (Exam_Knowledge_Points)": [
+      "商业数据深度建模与分析",
+      "Python/R复杂数据清洗挖掘",
+      "企业级数据看板搭建",
+      "业务场景数据决策方案输出"
+    ],
+    "关联支撑岗位 (Target_Jobs)": [
+      "高级商业数据分析师",
+      "数据业务策略专家",
+      "用户增长数据分析负责人"
+    ]
+  },
+  {
+    "证书唯一ID": "CERT_DA_002",
+    "证书/竞赛名称": "Google Data Analytics Professional Certificate",
+    "发证/主办机构": "Google 谷歌",
+    "认证级别": "入门级 (Associate)",
+    "考核知识点 (Exam_Knowledge_Points)": [
+      "数据分析完整工作流全流程",
+      "SQL多维度数据查询处理",
+      "结构化数据清洗方法",
+      "基础数据可视化呈现"
+    ],
+    "关联支撑岗位 (Target_Jobs)": [
+      "初级数据分析师",
+      "业务运营分析专员",
+      "数据整理助理工程师"
+    ]
+  },
+  {
+    "证书唯一ID": "CERT_DA_003",
+    "证书/竞赛名称": "Tableau Desktop Specialist",
+    "发证/主办机构": "Tableau 软件公司",
+    "认证级别": "初级 (Associate)",
+    "考核知识点 (Exam_Knowledge_Points)": [
+      "Tableau可视化报表开发",
+      "交互式数据看板设计",
+      "多源数据关联整合",
+      "动态数据图表交互优化"
+    ],
+    "关联支撑岗位 (Target_Jobs)": [
+      "数据可视化工程师",
+      "BI报表开发专员",
+      "运营数据展示岗"
+    ]
+  }
+]

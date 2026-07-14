@@ -1,0 +1,53 @@
+[
+  {
+    "证书唯一ID": "CERT_JAVA_001",
+    "证书/竞赛名称": "OCP Oracle认证专业Java程序员",
+    "发证/主办机构": "Oracle 甲骨文",
+    "认证级别": "中级 (Professional)",
+    "考核知识点 (Exam_Knowledge_Points)": [
+      "Java SE核心高级语法与JVM调优",
+      "Java面向对象设计规范",
+      "多线程与并发编程实战",
+      "JDBC与企业级基础开发规范"
+    ],
+    "关联支撑岗位 (Target_Jobs)": [
+      "Java后端开发工程师",
+      "Java服务端性能调优专员",
+      "Java企业级应用开发岗"
+    ]
+  },
+  {
+    "证书唯一ID": "CERT_JAVA_002",
+    "证书/竞赛名称": "Spring Professional Certification",
+    "发证/主办机构": "VMware (Pivotal官方授权)",
+    "认证级别": "中级 (Professional)",
+    "考核知识点 (Exam_Knowledge_Points)": [
+      "Spring Boot全栈快速开发",
+      "Spring Cloud微服务架构落地",
+      "Spring生态事务与安全管控",
+      "Spring应用生产级部署调优"
+    ],
+    "关联支撑岗位 (Target_Jobs)": [
+      "Spring微服务开发工程师",
+      "Java云原生开发工程师",
+      "后端架构组件开发岗"
+    ]
+  },
+  {
+    "证书唯一ID": "CERT_JAVA_003",
+    "证书/竞赛名称": "软考 系统架构设计师（高级）",
+    "发证/主办机构": "工业和信息化部/人力资源和社会保障部",
+    "认证级别": "高级工程师职称",
+    "考核知识点 (Exam_Knowledge_Points)": [
+      "Java大型分布式系统架构设计",
+      "高并发高可用架构方案落地",
+      "系统全生命周期项目管理",
+      "国产软硬件生态适配方案"
+    ],
+    "关联支撑岗位 (Target_Jobs)": [
+      "Java高级架构师",
+      "政企Java技术负责人",
+      "后端系统架构师"
+    ]
+  }
+]
